@@ -17,7 +17,8 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
  * IN THE SOFTWARE. 
  */
-(function (m) {
+
+(function (module) {
     "use strict";
 
     var fs = require("fs"), http = require("http"), object = {}, index = 0, globalResponse, util, rndz, data, stateVector, cache;
@@ -746,7 +747,7 @@
         }
     };
 
-    m.exports = {
+    module.exports = {
         getComputed: function (response) {
 
             var lookAngle = {};
